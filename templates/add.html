@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add New Application</h2>
+<form method="POST" action="/add">
+  <label>Company Name</label>
+  <input type="text" name="company" required><br><br>
+
+  <label>Role</label>
+  <input type="text" name="role" required><br><br>
+
+  <label>Status</label>
+  <select name="status">
+    <option>Applied</option>
+    <option>Interview</option>
+    <option>Rejected</option>
+    <option>Offered</option>
+  </select><br><br>
+
+  <label>Date</label>
+  <input type="date" name="date" required><br><br>
+
+  <button type="submit">Add Application</button>
+</form>
+{% endblock %}
