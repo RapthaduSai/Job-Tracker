@@ -1,6 +1,7 @@
+
 Job Application Tracker
 
-A web-based job application tracking system built using Python, Flask and SQLite. The application allows users to record job applications, view submitted applications and update their application status through a simple interface.
+A web-based job application tracking system built using **Python, Flask and SQLite**. The application allows users to record job applications, view submitted applications and update their application status through a simple interface.
 
 Features
 
