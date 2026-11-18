@@ -1,14 +1,21 @@
 Job Application Tracker
 
-A Flask web application to track job applications.
-
-Live Demo
-https://job-tracker-production-335d.up.railway.app
-
-Tech Stack
-Python · Flask · SQLite · Docker · GitHub Actions · Railway
+A web-based job application tracking system built using Python, Flask and SQLite. The application allows users to record job applications, view submitted applications and update their application status through a simple interface.
 
 Features
-- Add and track job applications
-- Update application status
-- CI/CD pipeline with GitHub Actions
+
+- Add job applications with company name, job role and application date.
+- View and manage saved job applications.
+- Update application status across four stages: Applied, Interview, Rejected and Offered.
+- Store application records in an SQLite database.
+- Run the application inside a Docker container.
+- GitHub Actions workflow for automated application checks.
+
+Technology Stack
+
+- Backend: Python, Flask
+- Database: SQLite
+- Frontend: HTML, CSS, Jinja templates
+- Containerization: Docker
+- Automation: GitHub Actions
+- Deployment: Railway (previously configured)
