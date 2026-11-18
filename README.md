@@ -12,6 +12,33 @@ Features
 - Run the application inside a Docker container.
 - GitHub Actions workflow for automated application checks.
 
+Application Architecture
+
+The application follows a simple Flask-based architecture with SQLite for data persistence.
+
+```mermaid
+flowchart TD
+    A["User / Web Browser"] --> B["Flask Application - app.py"]
+
+    B --> C["GET / - View Applications"]
+    B --> D["GET /add - Display Form"]
+    B --> E["POST /add - Save Application"]
+    B --> F["POST /update/id - Update Status"]
+
+    C --> G[("SQLite Database - jobs.db")]
+    E --> G
+    F --> G
+
+    B --> H["Jinja Templates"]
+    H --> I["index.html"]
+    H --> J["add.html"]
+
+    I --> A
+    J --> A
+
+    K["Static CSS"] --> A
+```
+
 Technology Stack
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
