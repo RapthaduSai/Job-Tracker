@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 jobs.db
 .env
+.idea/
+.venv/
+.pytest_cache/
